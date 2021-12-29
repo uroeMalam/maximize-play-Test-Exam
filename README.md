@@ -6,7 +6,8 @@
 <p> - selanjutnya jalankan "php artisan migrate:fresh --seed" di terminal tanpa tanda kutip untuk melakukan migrasi seluruh database beserta data masternya</p>
 <p> - terakhir jalankan "php artisan serve" tanpa tanda kutip untuk menjalankan aplikasi.</p>
 <p> - done</p>
+<br>
 <small> **setiap error yang terjadi diharapkan untuk dapat dilaporkan segera agar memudahkan dalam mengembangkan aplikasi yang leibh baik lagi kedepannya :)</small>
-
-<p>Gak Mau ribet ? langsung aja klik <a href="https://maximize-play-test-exam.resotim.com/">link ini</a>  untuk melihat demo nya</p>
+<br>
+<p>Gak Mau ribet ? langsung aja klik <a href="http://minimize-play.resotim.com/">link ini</a>  untuk melihat demo nya</p>
 
