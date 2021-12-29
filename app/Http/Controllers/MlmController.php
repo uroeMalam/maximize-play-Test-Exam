@@ -68,7 +68,7 @@ class MlmController extends Controller
      */
     public function store(Request $request)
     {
-        $cek = th_mlm::where('id_pengguna',$request->upline)->count();
+        $cek = th_mlm::where('id_pengguna',$request->upline)->where('deleted_at',null)->count();
         if ($cek >= 2) {
             return response()->json(['status' => false, 'message' => 'Upline Sudah memiliki 2 Downline']);
         }else{
@@ -146,6 +146,7 @@ class MlmController extends Controller
     public function destroy(Request $request)
     {
         tm_pengguna::findOrFail($request->id)->delete();
+        th_mlm::where('id_downline',$request->id)->delete();
         return response()->json(['status' => true, 'message' => 'berhasil']);
     }
 
